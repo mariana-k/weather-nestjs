@@ -16,4 +16,9 @@ export const databaseConfig: TypeOrmModuleOptions = {
     rejectUnauthorized: false
   },
   connectTimeoutMS: 10000, // 10 seconds
+  extra: {
+    ssl: {
+      rejectUnauthorized: false
+    }
+  }
 }; 
