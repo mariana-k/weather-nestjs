@@ -1,7 +1,7 @@
 import { Controller, Post, Get, Body, Param, ConflictException } from '@nestjs/common';
 import { SubscriptionService } from '../services/subscription.service';
 
-@Controller('subscribe')
+@Controller('api/subscribe')
 export class SubscriptionController {
   constructor(private readonly subscriptionService: SubscriptionService) {}
 
